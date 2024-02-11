@@ -1,0 +1,65 @@
+ @font-face {
+    font-family: "Modak";
+    src: url(Fonts/Modak.ttf);
+ }
+
+ @font-face {
+    font-family: "KoHo";
+    src: url(Fonts/KoHo-Bold.ttf);
+    font-weight: "Bold";
+ }
+
+ @font-face {
+    font-family: "KoHo";
+    src: url(Fonts/KoHo-Regular.ttf);
+    font-weight: "regular";
+ }
+ 
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ .container{
+    width: 100vw;
+ }
+
+ .swiper, .swiper-wrapper, .swiper-slide {
+    width: 100%;
+ }
+
+ .swiper-slide {
+    padding: 4rem;
+    background-color: #EB6E33;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+ }
+
+ .slide-bg-text{
+    font-size: 13vw;
+    color: #A53F0F;
+    font-family: "Modak";
+    text-transform: uppercase;
+ }
+
+ .image-wrapper{
+    position: relative;
+    height: 55vh;
+ }
+
+ .can-mockup{
+    height: 55vh;
+ }
+
+ .can-design{
+    height: 55vh;
+    width: auto;
+    position: absolute;
+    left: 0%;
+    mix-blend-mode: multiply;
+    mask-image: url(Images/Can-mockup.png);
+ }
