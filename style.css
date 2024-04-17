@@ -53,8 +53,32 @@
 .mockup-wrapper{
   position: relative;
   height: var(--height-mockup);
+  width: var(--width-mockup);
   display: flex;
   align-items: center;
+}
+
+.fruit-slice{
+  position: absolute;
+  z-index: 2;
+}
+
+.fruit-slice.is-1{
+  width: 6rem;
+  top: 20%;
+  left: -70%;
+}
+
+.fruit-slice.is-2{
+  width: 6rem;
+  top: 50%;
+  left: -55%;
+}
+
+.fruit-slice.is-3{
+  width: 9rem;
+  top: 70%;
+  left: 100%;
 }
 
 :root{
@@ -63,13 +87,16 @@
 }
 
 .mockup{
-  --left: 10%;
+  --left: 0%;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
   border: 1px solid red;
   height: var(--height-mockup);
   width: var(--width-mockup);
   background: url(Images/mockup.png) 0 0 no-repeat,
-              url(Images/Orange-can.jpg) var(--left);
+              url(Images/can-wrapper.jpg) var(--left);
   background-size: auto 100%;
   background-blend-mode: multiply;
   mask-image: url(Images/mockup.png);
@@ -85,6 +112,10 @@
   font-size: 13vw;
   font-family: 'Modak';
   text-wrap: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .mockup-wrapper.is-strawberry>.flavour_bg-text{
@@ -115,7 +146,6 @@
   justify-content: space-between;
   gap: 2rem ;
   align-items: center;
-  border: 1px solid red;
 }
 
 .ingredient{
